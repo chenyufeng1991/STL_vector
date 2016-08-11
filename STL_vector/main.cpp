@@ -85,6 +85,7 @@ int main(int argc, const char * argv[])
     PrintVector(vec1);
 
     // 删除数组的某个元素
+    // 为什么要使用iterator来进行定位，因为数组如果要删除一个元素或者插入一个元素，会导致其他元素移动，所以不能直接进行删除
     vector<int>::iterator vItera = vec1.begin();
     vItera = vItera + 2;
     vec1.erase(vItera);
