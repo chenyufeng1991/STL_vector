@@ -77,6 +77,19 @@ int main(int argc, const char * argv[])
     reverse(vec1.begin(), vec1.end());
     PrintVector(vec1);
 
+    // 修改vector中的某个值
+    vec1[2] = 99;
+    PrintVector(vec1);
+
+    vec1.at(3) = 88;
+    PrintVector(vec1);
+
+
+
+
+
+
+
     // 重新设置vector的容量
     vec1.resize(10);
 
