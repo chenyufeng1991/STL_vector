@@ -90,12 +90,11 @@ int main(int argc, const char * argv[])
     vec1.erase(vItera);
     PrintVector(vec1);
 
-
-
-
-
-
-
+    // vector插入某元素，要使用iterator来定位某个位置
+    vector<int>::iterator vInsert = vec1.begin();
+    vInsert = vInsert + 2;
+    vec1.insert(vInsert, 777);
+    PrintVector(vec1);
 
     // 重新设置vector的容量
     vec1.resize(10);
