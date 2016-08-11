@@ -52,7 +52,7 @@ int main(int argc, const char * argv[])
     cout << "vector中的最大容量为：" << vec1.max_size() << endl;
     cout << "vector中的元素个数为：" << vec1.size() << endl;
 
-
+    cout << "vector是否为空：" << vec1.empty() << endl;
 
 
 
@@ -67,6 +67,7 @@ int main(int argc, const char * argv[])
     // 清除所有数据
     vec1.clear();
     PrintVector(vec1);
+    cout << "vector是否为空：" << vec1.empty() << endl;
 
 
 
