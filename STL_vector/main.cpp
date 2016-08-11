@@ -55,6 +55,17 @@ int main(int argc, const char * argv[])
     cout << "vector是否为空：" << vec1.empty() << endl;
 
 
+    // 交换两个容器中的数据
+    vector<int> vecSwap;
+    vecSwap.push_back(1);
+    vecSwap.push_back(2);
+
+    PrintVector(vec1);
+    PrintVector(vecSwap);
+    vec1.swap(vecSwap);
+    PrintVector(vec1);
+    PrintVector(vecSwap);
+
 
 
 
