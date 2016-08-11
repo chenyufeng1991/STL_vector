@@ -25,6 +25,8 @@ int main(int argc, const char * argv[])
     vec1.push_back(4);
     vec1.push_back(6);
     vec1.push_back(8);
+    vec1.push_back(10);
+    vec1.push_back(12);
     PrintVector(vec1);
 
     // 在vector尾部删除元素
@@ -46,6 +48,26 @@ int main(int argc, const char * argv[])
     cout << "尾部数据的值为：" << vec1.back() << endl;
     // 返回头部数据的引用
     cout << "头部数据的值为：" << vec1.front() << endl;
+
+    cout << "vector中的最大容量为：" << vec1.max_size() << endl;
+    cout << "vector中的元素个数为：" << vec1.size() << endl;
+
+
+
+
+
+
+
+
+
+
+    // 重新设置vector的容量
+    vec1.resize(10);
+
+    // 清除所有数据
+    vec1.clear();
+    PrintVector(vec1);
+
 
 
 
