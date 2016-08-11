@@ -25,8 +25,8 @@ int main(int argc, const char * argv[])
     vec1.push_back(4);
     vec1.push_back(6);
     vec1.push_back(8);
-    vec1.push_back(10);
-    vec1.push_back(12);
+    vec1.push_back(1);
+    vec1.push_back(2);
     PrintVector(vec1);
 
     // 在vector尾部删除元素
@@ -66,11 +66,16 @@ int main(int argc, const char * argv[])
     PrintVector(vec1);
     PrintVector(vecSwap);
 
+    // 重新再交换回来
+    vec1.swap(vecSwap);
 
+    // 对vector进行升序排序
+    sort(vec1.begin(), vec1.end());
+    PrintVector(vec1);
 
-
-
-
+    // 对vector进行降序排序
+    reverse(vec1.begin(), vec1.end());
+    PrintVector(vec1);
 
     // 重新设置vector的容量
     vec1.resize(10);
@@ -79,13 +84,6 @@ int main(int argc, const char * argv[])
     vec1.clear();
     PrintVector(vec1);
     cout << "vector是否为空：" << vec1.empty() << endl;
-
-
-
-
-
-
-
 
     return 0;
 }
