@@ -84,6 +84,13 @@ int main(int argc, const char * argv[])
     vec1.at(3) = 88;
     PrintVector(vec1);
 
+    // 删除数组的某个元素
+    vector<int>::iterator vItera = vec1.begin();
+    vItera = vItera + 2;
+    vec1.erase(vItera);
+    PrintVector(vec1);
+
+
 
 
 
