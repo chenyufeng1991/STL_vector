@@ -105,6 +105,15 @@ int main(int argc, const char * argv[])
     PrintVector(vec1);
     cout << "vector是否为空：" << vec1.empty() << endl;
 
+
+    // 测试vector去重
+    int arr1[] = {6,4,1,1,6,6,9,9,6,6};
+    vector<int> arr1Vec(arr1, arr1+sizeof(arr1)/sizeof(int));
+    sort(arr1Vec.begin(), arr1Vec.end());
+    vector<int>::iterator arr1Ite = unique(arr1Vec.begin(), arr1Vec.end());
+    arr1Vec.erase(arr1Ite, arr1Vec.end());
+    PrintVector(arr1Vec);
+
     return 0;
 }
 
